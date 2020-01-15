@@ -1,0 +1,31 @@
+{
+  "name": "tarkovgunlookup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zac-hills/tarkovGunLookup.git"
+  },
+  "keywords": [
+    "Tarkov",
+    "Lookup"
+  ],
+  "author": "Zachary Hills, Chris Carmichael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zac-hills/tarkovGunLookup/issues"
+  },
+  "homepage": "https://github.com/Zac-hills/tarkovGunLookup#readme",
+  "devDependencies": {
+    "electron": "^7.1.9"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
