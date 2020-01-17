@@ -4,7 +4,8 @@
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   width: 40%;
-  vertical-align: middle;
+  position: relative;
+  top: -3px;
 }
 
 .search-bar:focus::placeholder {
@@ -39,13 +40,64 @@ body {
   border-color: transparent;
   border: none;
   -webkit-app-region: no-drag;
+  cursor: pointer;
 }
-
+.exit-button:hover {
+  background-color: red;
+}
 .exit-button:focus {
   outline: none;
 }
 
 .exit-button:active {
+  color: goldenrod;
+}
+
+.maximize-button {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  border-color: transparent;
+  border: none;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+.maximize-button:hover {
+  background-color: #abb0b4;
+}
+.maximize-button:focus {
+  outline: none;
+}
+
+.maximize-button:active {
+  color: goldenrod;
+}
+
+.minimize-button {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: -2px;
+  right: 35px;
+  border-color: transparent;
+  border: none;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+.minimize-button:hover {
+  background-color: #abb0b4;
+}
+.minimize-button:focus {
+  outline: none;
+}
+
+.minimize-button:active {
   color: goldenrod;
 }
 

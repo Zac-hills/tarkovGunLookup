@@ -20,6 +20,16 @@ function createWindow() {
   ipcMain.on("exit-button", function(event, arg) {
     win.close();
   });
+  ipcMain.on("maximize-button", function(event, arg) {
+    if (win.isMaximized()) {
+      win.unmaximize();
+      return;
+    }
+    win.maximize();
+  });
+  ipcMain.on("minimize-button", function(event, arg) {
+    win.minimize();
+  });
 }
 
 app.on("ready", createWindow);
